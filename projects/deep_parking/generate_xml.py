@@ -37,8 +37,10 @@ def write_xml(folder, img, objects, tl, br, savedir):
     root = etree.fromstring(xml_str)
 
     xml_str = etree.tostring(root, pretty_print = True)
+    save_path = os.path.join(savedir, img.name.replace('png', 'xml'));
+    with open(save_path, 'wb') as temp_xml:
+        temp_xml.write(xml_str);
 
-    return xml_str
 
 if __name__ == '__main__':
     folder = 'images_folder'
@@ -48,7 +50,6 @@ if __name__ == '__main__':
     tl = [(10, 10)]
     br = [(100, 100)]
     savedir = 'annotations'
-    xml_str = write_xml(folder, img, objects, tl, br, savedir)
-    print(xml_str)
+    write_xml(folder, img, objects, tl, br, savedir)
 
 

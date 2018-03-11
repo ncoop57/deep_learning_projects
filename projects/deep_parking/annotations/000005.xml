@@ -1,0 +1,26 @@
+<annotation>
+	<folder>parking_spaces</folder>
+	<filename>000005.png</filename>
+	<path>/home/nathan/projects/machine_learning/tensorflow/projects/deep_parking/data/parking_spaces/000005.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>0</width>
+		<height>0</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>empty_space</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>464</xmin>
+			<ymin>285</ymin>
+			<xmax>900</xmax>
+			<ymax>482</ymax>
+		</bndbox>
+	</object>
+</annotation>

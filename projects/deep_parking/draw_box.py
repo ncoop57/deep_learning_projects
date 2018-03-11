@@ -2,6 +2,7 @@ import os
 import matplotlib.pyplot as plt
 import cv2
 from matplotlib.widgets import RectangleSelector
+from generate_xml import write_xml
 
 img = None
 tl_list = []
@@ -27,7 +28,7 @@ def onkeypress(event):
     global br_list
     global img
     if event.key == 'q':
-        print(tl_list, br_list)
+        write_xml(image_folder, img, object_list, tl_list, br_list, savedir)
         tl_list = []
         br_list = []
         object_list = []
